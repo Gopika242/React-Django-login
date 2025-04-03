@@ -1,0 +1,21 @@
+body{
+    background:linear-gradient(to right,#4facfe,#00f2fe);
+    color:white;
+    margin:0;
+    padding:0;
+
+}
+button {
+    background-color: #085191;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #dee4e6;
+    color:black;
+  }
