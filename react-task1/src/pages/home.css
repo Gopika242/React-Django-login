@@ -1,0 +1,87 @@
+/* Full layout styling */
+.home-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  .home-content {
+    margin-left: 16rem;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+ 
+  .welcome-section {
+    text-align: center;
+    margin-top: 3rem;
+    color:#085191 ;
+  }
+  
+  .welcome-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-section button {
+    background-color: #085191;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .welcome-section button:hover {
+    background-color: #063d70;
+  }
+  
+  .dashboard-container {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .dashboard-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+
+  .dashboard-card {
+    background-color: #085191;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+    background-color: #b1d6f8;
+
+  }
+  
+  .dashboard-card h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard-card p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  

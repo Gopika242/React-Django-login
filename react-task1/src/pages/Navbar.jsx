@@ -1,25 +1,46 @@
 import React from 'react';
-import "./Navbar.css";
+import { NavLink } from 'react-router-dom';
+import './Navbar.css';
+
 function Navbar() {
   return (
-    <div className='{style.div1}'>
-        <nav style={{backgroundColor:"#085191",height:"50px",padding:"10px", justifyContent:"space-between",display:"flex",alignItems:"center"}}>
-        <ul class="nav nav-pills">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Contact</a>
-  </li>
-
-</ul>
-        </nav>
-    
+    <div className="navbar bg-gray-800 px-6 py-3">
+      <nav>
+        <ul className="nav nav-pills flex space-x-4">
+          <li className="nav-item">
+            <NavLink
+              to="/home"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              About
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
     </div>
-  )
+  );
 }
 
 export default Navbar;

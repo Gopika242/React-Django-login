@@ -5,12 +5,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 function Login() {
   const navigate = useNavigate();
-  const [username, setUsername] = useState(""); // Stores username
-  const [password, setPassword] = useState(""); // Stores password
-  const [captchaVerified, setCaptchaVerified] = useState(false); // CAPTCHA status
-
-  const validUser = { username: "gopika", password: "pass123" }; // Hardcoded user
-
+  const [username, setUsername] = useState(""); 
+  const [password, setPassword] = useState(""); 
+  const [captchaVerified, setCaptchaVerified] = useState(false); 
+  // const validUser = { username: "gopika", password: "pass123" }; 
   const handleSubmit = async (e) => {
     e.preventDefault(); 
     if (!captchaVerified) {
@@ -23,6 +21,11 @@ function Login() {
         password: password,
       })
       if (response.status==200){
+        const { access, refresh } = response.data;
+
+        localStorage.setItem("access", access);
+        localStorage.setItem("refresh", refresh);
+        localStorage.setItem("username", username);
         alert("Login successful!");
         localStorage.setItem("username",username);
         navigate("/home");

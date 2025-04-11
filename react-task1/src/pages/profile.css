@@ -1,0 +1,24 @@
+.sidebar {
+  width: 16rem; 
+  background-color: #1f2937; 
+  color: white;
+}
+
+.main-content {
+  margin-left: 16rem; 
+}
+
+.profile-box {
+    margin-left: 500px;
+    margin-top: 150px;
+    background-color: #c7d2e2;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+
+  

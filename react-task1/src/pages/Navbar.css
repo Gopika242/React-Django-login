@@ -1,7 +1,23 @@
-.div1 {
-    background-color: #f1f1f1 !important; /* Force background color */
-    padding: 20px !important;
-    text-align: center !important;
-    margin: 15px !important;
-  }
-  
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 50;
+  background-color: #1f2937; 
+}
+
+.nav-link {
+  color: white !important;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  background-color: #b4d5f1 !important;
+}
